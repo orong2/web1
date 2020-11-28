@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    font-family: "맑은고딕";
+    color: #222328;
+    list-style: none;
+}
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.clear{
+    clear: both;
+}
+
+
+.all{
+    width: 100%;
+}
+
+
+.wrap{
+    width: 1200px;
+}
+
+
+header{
+    height: 100px;
+    background-color: aliceblue;
+}
+
+
+#h_div{
+    height: 100px;
+    background-color: #000;
+}
+
+
+.logo{
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    float: left;
+}
+
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+
+nav{
+    width: 825px;
+    height: 100px;
+    float: right;
+/*    background-color: aqua;*/
+}
+
+
+.menu{
+    margin-top: 50px;
+    width: 800px;
+    height: 50px;
+    background-color: #000;
+    float: left;
+}
+
+
+.menu>li{
+    position: relative;
+    transition: all 0.4s;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    width: 200px;
+    float: left;
+}
+
+
+.menu>li:hover{
+    background-color: #fff;
+    color: #000;
+/*    기본 컬러가 주어져있는데 000으로 해도 되는 부분?*/
+}
+
+
+.submenu{
+    z-index: 99;
+    display: none;
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+}
+
+
+.submenu>li{
+    line-height: 40px;
+    height: 37.5px;
+    color: gray;
+    transition: all 0.4s;
+}
+
+
+.submenu>li:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+.subback{
+    left: 360px;
+    width: 1200px;
+    z-index: 80;
+    background-color: #000;
+    display: none;
+    position: absolute;
+    height: 150px;
+}
+/*섭백이 클라스말고 아이디로 주면 왜 안나올까 */
+
+
+#slide{
+    height: 300px;
+    background-color: #000;
+    overflow: hidden;
+}
+
+/*제 슬라이드 봐주ㅠ세여ㅜㅜㅜㅜㅜㅜㅜㅜ*/
+#slide img{
+    transition: all 0.4s;
+    width: 100%;
+    height: 100%;
+}
+
+
+#contents{
+    height: 200px;
+/*    background-color: aliceblue;*/
+}
+
+
+#c1{
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+
+
+#c2{
+    text-align: center;
+    float: left;
+    width: 400px;
+    height: 200px;
+/*    background-color: antiquewhite;*/
+}
+
+
+#c3{
+    text-align: center;
+    float: left;
+    width: 400px;
+    height: 200px;
+/*    background-color: aqua;*/
+}
+
+
+.title{
+    margin-top: 5px;
+    text-align: center;
+    width: 380px;
+    border-bottom: 1px solid;
+    height: 20px;
+}
+
+
+table{
+    margin-top: 5px;
+/*    background-color: antiquewhite;*/
+    text-align: center;
+    width: 380px;
+    height: 160px;
+}
+
+
+table td:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+#c2 img{
+    margin-top: 27px;
+    width: 120px;
+    height: 120px;
+}
+
+
+#c3 img{
+    margin-top: 5px;
+    width: 380px;
+    height: 160px;
+}
+
+
+footer{
+    background-color: #000;
+    height: 100px;
+}
+
+
+#f_div{
+/*    background-color: antiquewhite;*/
+    height: 100px;
+}
+
+
+#b_menu{
+    width: 900px;
+    height: 50px;
+/*    background-color: aqua;*/
+    float: left;
+}
+
+
+#copyright{
+    width: 900px;
+    height: 50px;
+/*    background-color: red;*/
+    float: left;
+}
+
+
+#site{
+    width: 300px;
+    height: 100px;
+/*    background-color: aquamarine;*/
+    float: right;
+}
+
+
+
+#site select{
+    margin-top: 35px;
+    margin-left: 150px;
+    width: 150px;
+    height: 30px;
+    background-color: #fff;
+}
+
+
+#b_menu li{
+    color: #fff;
+    margin-top: 15px;
+    text-align: center;
+    width: 225px;
+    float: left;
+}
+
+
+#b_menu li:hover{
+    font-weight: 1000;
+}
+
+
+
+p{
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+}
+
+
+
+.pop{
+    display: none;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+.p_body{
+    margin-top: 150px;
+    background-color: black;
+    width: 500px;
+    height: 450px;
+}
+
+
+.p_body img{
+    width: 500px;
+}
+
+
+.btn{
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #fff;
+}
+
+
+.btn:hover{
+    background-color: rgba(255,0,0,0.8);
+    color: #fff;
+}
